@@ -1,7 +1,6 @@
 # Total Belanja
 
 ```cpp
-
 #include <iostream>
 using namespace std;
 
@@ -16,12 +15,15 @@ void hitungHarga(int hargaSatuan, int jumlahBeli, int diskon) {
 
 int main() {
     
-    int apel;
+    int apel, hargaApel;
+    
+    cout<<"Harga apel satuan: ";
+    cin>>hargaApel;
     
     cout<<"Jumlah apel yang dibeli: ";
 	cin>>apel;
 	
-	hitungHarga(5000, apel, 20);
+	hitungHarga(hargaApel, apel, 20);
 
     return 0;
 }
