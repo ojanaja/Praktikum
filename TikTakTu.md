@@ -28,8 +28,17 @@ void setcolor(unsigned short color)
 }
 
 void setcolor(unsigned short color);
+
+void header()
+{
+	cout << "-----------------------------------------------------------------------\n";
+    cout << "-                  Selamat Datang di game TikTakTu                    - \n";
+    cout << "-----------------------------------------------------------------------\n";
+    cout << "-                           Made by Ojan                              -\n";
+    cout << "-----------------------------------------------------------------------\n";
+}
 	
-void playAgain();
+
 
 //Matrix Peta
 void matrixPeta()
@@ -50,7 +59,7 @@ void inputDigit();
 //Penentuan Menang-Kalah
 bool menangKalah()
 {	
-	for (int i=0; i<3; i++)
+	for (int i=0; i<=3; i++)
 	{
 		if (peta[i][0]==peta[i][1] && peta[i][0]==peta[i][2] || peta[0][i]==peta[1][i] && peta[0][i]==peta[2][i])
 		return true;
@@ -61,9 +70,9 @@ bool menangKalah()
 		return true;
 	}
 	
-	for (int i=0; i<3; i++)
+	for (int i=0; i<=3; i++)
 	{
-		for (int j=0; j<3; j++)
+		for (int j=0; j<=3; j++)
 		{
 			if (peta[i][j] != 'X' && peta[i][j] != 'O')
 			{
@@ -78,7 +87,7 @@ bool menangKalah()
 //Input Nama, Deklarasi Pemenang, Program Utama
 int main()
 {
-	
+	header();
 	cout<<"Masukkan nama pemain pertama: ";
     cin>>player1.nama;
     cout<<"Masukkan nama pemain kedua: ";
@@ -264,7 +273,12 @@ void playAgain(){
 			main();
 		break;
 		case 2:
-			cout<<"\nTerimakasih sudah bermain! \n";
+			cout << "-----------------------------------------------------------------------\n";
+   			cout << "-                  Terimakasih sudah bermain!                         - \n";
+    		cout << "-----------------------------------------------------------------------\n";
+    		cout << "-                           Made by Ojan                              -\n";
+    		cout << "-----------------------------------------------------------------------\n";
+	
 		break;
 	}
 }
