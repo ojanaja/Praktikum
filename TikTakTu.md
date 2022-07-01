@@ -29,6 +29,8 @@ void setcolor(unsigned short color)
 
 void setcolor(unsigned short color);
 
+void playAgain();
+
 void header()
 {
 	cout << "-----------------------------------------------------------------------\n";
